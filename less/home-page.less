@@ -1,0 +1,45 @@
+header{
+    .flex(@direction: column);
+    padding: 2%;
+    background-color: @header;
+
+    h1 {
+        color: @font-color;
+        text-shadow: 1.5px 0 0;
+      }//closes h1
+
+    nav{
+        margin:1%;
+        width:60%;
+        text-align: center;
+        a{
+            margin: 2%;
+            width: 100%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: @font-color;
+            font-weight: bolder;
+
+            &:hover{
+                color: black;
+                font-size: 2rem;
+            }//closes hover
+
+        }//closes a
+    }//closes nav
+}//closes header
+
+.info{
+    .flex(@direction: column);
+    img{
+
+        border-radius: 5%;
+        margin: 3%;
+    }//closes img
+
+    p{
+        width: 55%;
+        text-align: justify;
+        margin-bottom: 3%;
+    }//closes p
+}//closes section
