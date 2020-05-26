@@ -1,12 +1,94 @@
-
 .sativaSection{
+    text-align: center;
+    margin-top: 3%;
+    h2{
+        margin: 2%;
+    } //closes h2
+
+    div{
+        .flex(@justify: space-evenly, @align: normal);
+        margin: 3%;
+
+        img{
+            border-radius: 50%;
+            width: 20%;
+        }//closes img
+    
+        .effects{
+            width: 20%;
+        }//closes effects
+    
+        .uses{
+            width: 20%;
+        }//closes uses
+
+        .commonStrains{
+            width: 20%;
+        }//closes common strains
+    }//closes div
 
 }
 
 .indicaSection{
+    text-align: center;
+    margin-top: 5%;
+
+    h2{
+        margin: 2%;
+    } //closes h2
+
+    div{
+        .flex(@justify: space-evenly, @align: normal);
+        margin: 3%;
+
+        img{
+            border-radius: 50%;
+            width: 20%;
+            order: 1;
+        }//closes img
+    
+        .indicaEffects{
+            width: 20%;
+        }//closes effects
+    
+        .indicaUses{
+            width: 20%;
+        }//closes uses
+
+        .indicaCommonStrains{
+            width: 20%;
+        }//closes common strains
+    }//closes div
 
 }
 
 .hybridSection{
+    .flex(@direction: column);
+    margin: 5%;
 
+    h2{
+        margin: 2%;
+    } //closes h2
+
+    p{
+        width: 90%;
+    }//closes p
+
+    div{
+        .flex(@justify: space-evenly, @align: normal);
+        margin: 3%;
+
+        img{
+            border-radius: 50%;
+            width: 20%;
+        }//closes img
+
+        // p{
+        //     width: 40%;
+        // }
+
+        .hybridCommonStrains{
+
+        }//closes common strains
+    }//closes div
 }

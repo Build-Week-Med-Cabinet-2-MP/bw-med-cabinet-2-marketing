@@ -241,3 +241,82 @@ header nav a:hover {
     margin: 5%;
   }
 }
+.sativaSection {
+  text-align: center;
+  margin-top: 3%;
+}
+.sativaSection h2 {
+  margin: 2%;
+}
+.sativaSection div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: row;
+  margin: 3%;
+}
+.sativaSection div img {
+  border-radius: 50%;
+  width: 20%;
+}
+.sativaSection div .effects {
+  width: 20%;
+}
+.sativaSection div .uses {
+  width: 20%;
+}
+.sativaSection div .commonStrains {
+  width: 20%;
+}
+.indicaSection {
+  text-align: center;
+  margin-top: 5%;
+}
+.indicaSection h2 {
+  margin: 2%;
+}
+.indicaSection div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: row;
+  margin: 3%;
+}
+.indicaSection div img {
+  border-radius: 50%;
+  width: 20%;
+  order: 1;
+}
+.indicaSection div .indicaEffects {
+  width: 20%;
+}
+.indicaSection div .indicaUses {
+  width: 20%;
+}
+.indicaSection div .indicaCommonStrains {
+  width: 20%;
+}
+.hybridSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+}
+.hybridSection h2 {
+  margin: 2%;
+}
+.hybridSection p {
+  width: 90%;
+}
+.hybridSection div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: row;
+  margin: 3%;
+}
+.hybridSection div img {
+  border-radius: 50%;
+  width: 20%;
+}
