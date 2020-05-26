@@ -193,6 +193,14 @@ header nav a:hover {
   color: black;
   font-size: 2rem;
 }
+@media (max-width: 300px) {
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .info {
   display: flex;
   justify-content: center;
@@ -203,8 +211,29 @@ header nav a:hover {
   border-radius: 5%;
   margin: 3%;
 }
+@media (max-width: 660px) {
+  .info img {
+    width: 80%;
+  }
+}
+@media (max-width: 300px) {
+  .info img {
+    margin: 10%;
+  }
+}
 .info p {
   width: 55%;
   text-align: justify;
   margin-bottom: 3%;
+}
+@media (max-width: 660px) {
+  .info p {
+    width: 80%;
+  }
+}
+@media (max-width: 300px) {
+  .info p {
+    text-align: inherit;
+    margin: 5%;
+  }
 }
