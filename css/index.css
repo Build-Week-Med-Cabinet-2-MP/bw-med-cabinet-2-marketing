@@ -1,0 +1,579 @@
+/* 
+    Creates a flex container 
+    Default is to center as a flex row but can be changed with arguments
+*/
+/* 
+    Creates a bottom border
+    Default is 3px dashed with the color of the header 
+*/
+/*
+    Creates a button that can be changed
+    Default is 200px wide, color is header color and text is white,
+    rounded borders and height is 200px
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Gotu', sans-serif;
+  background-color: #eaf5df;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Gotu', sans-serif;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p,
+li {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  width: 50%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  background-color: #059033;
+}
+header h1 {
+  color: #EAF8CA;
+  text-shadow: 1.5px 0 0;
+}
+@media (max-width: 559px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+}
+header nav {
+  margin: 1%;
+  width: 60%;
+  text-align: center;
+}
+header nav a {
+  margin: 2%;
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #EAF8CA;
+  font-weight: bolder;
+}
+header nav a:hover {
+  color: black;
+  font-size: 2rem;
+}
+@media (max-width: 559px) {
+  header nav {
+    width: 80%;
+  }
+}
+@media (max-width: 300px) {
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info img {
+  border-radius: 5%;
+  margin: 3%;
+}
+@media (max-width: 660px) {
+  .info img {
+    width: 80%;
+  }
+}
+@media (max-width: 300px) {
+  .info img {
+    margin: 10%;
+  }
+}
+.info p {
+  width: 55%;
+  text-align: justify;
+  margin-bottom: 3%;
+}
+@media (max-width: 660px) {
+  .info p {
+    width: 80%;
+  }
+}
+@media (max-width: 300px) {
+  .info p {
+    text-align: inherit;
+    margin: 5%;
+  }
+}
+.sativaSection {
+  text-align: center;
+  margin-top: 3%;
+}
+.sativaSection h2 {
+  margin: 2%;
+}
+.sativaSection div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: row;
+  margin: 3%;
+}
+.sativaSection div img {
+  border-radius: 50%;
+  width: 20%;
+}
+@media (max-width: 850px) {
+  .sativaSection div img {
+    width: 25%;
+  }
+}
+@media (max-width: 660px) {
+  .sativaSection div img {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div img {
+    width: 75%;
+  }
+}
+.sativaSection div .effects {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .sativaSection div .effects {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div .effects ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+.sativaSection div .uses {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .sativaSection div .uses {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div .uses ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+.sativaSection div .commonStrains {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .sativaSection div .commonStrains {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div .commonStrains ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #059033;
+  }
+}
+.indicaSection {
+  text-align: center;
+  margin-top: 5%;
+}
+.indicaSection h2 {
+  margin: 2%;
+}
+.indicaSection div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: row;
+  margin: 3%;
+}
+.indicaSection div img {
+  border-radius: 50%;
+  width: 20%;
+  order: 1;
+}
+@media (max-width: 850px) {
+  .indicaSection div img {
+    width: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div img {
+    width: 75%;
+    order: -1;
+  }
+}
+.indicaSection div .indicaEffects {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaEffects {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaEffects ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+.indicaSection div .indicaUses {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaUses {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaUses ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+.indicaSection div .indicaCommonStrains {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaCommonStrains {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaCommonStrains ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #059033;
+  }
+}
+.hybridSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+}
+.hybridSection h2 {
+  margin: 2%;
+}
+.hybridSection p {
+  width: 90%;
+}
+@media (max-width: 500px) {
+  .hybridSection p {
+    order: 1;
+  }
+}
+.hybridSection div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: row;
+  margin: 3%;
+}
+.hybridSection div img {
+  border-radius: 50%;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .hybridSection div img {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .hybridSection div .hybridCommonStrains {
+    width: 100%;
+    margin: 3%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .hybridSection div .hybridCommonStrains ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+@media (max-width: 500px) {
+  .hybridSection div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 5%;
+}
+.btn a {
+  text-decoration: none;
+}
+.btn a button {
+  display: block;
+  width: 300px;
+  background-color: #355A20;
+  margin: 0 10px 20px;
+  color: white;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+.btn a button:hover {
+  background-color: #fcfef7;
+  color: #355A20;
+}
+@media (max-width: 500px) {
+  .btn a button {
+    width: 300px;
+    height: 75px;
+    font-size: 2.35rem;
+  }
+}
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .team h1 {
+    margin-bottom: 5%;
+  }
+}
+.team section {
+  text-align: center;
+  margin: 3%;
+  width: 80%;
+}
+.team section img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 2%;
+}
+.team section .outside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .team section .outside .PM,
+  .team section .outside .react1 {
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #059033;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .team section .outside {
+    flex-direction: column;
+  }
+}
+.team section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .team section {
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #059033;
+  }
+}
