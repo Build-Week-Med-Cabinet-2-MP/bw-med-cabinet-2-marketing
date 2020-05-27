@@ -6,6 +6,11 @@
     Creates a bottom border
     Default is 3px dashed with the color of the header 
 */
+/*
+    Creates a button that can be changed
+    Default is 200px wide, color is header color and text is white,
+    rounded borders and height is 200px
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -153,7 +158,7 @@ h5 {
   font-family: 'Gotu', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -184,6 +189,11 @@ header h1 {
   color: #EAF8CA;
   text-shadow: 1.5px 0 0;
 }
+@media (max-width: 559px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+}
 header nav {
   margin: 1%;
   width: 60%;
@@ -200,6 +210,11 @@ header nav a {
 header nav a:hover {
   color: black;
   font-size: 2rem;
+}
+@media (max-width: 559px) {
+  header nav {
+    width: 80%;
+  }
 }
 @media (max-width: 300px) {
   header nav {
@@ -474,5 +489,91 @@ header nav a:hover {
   .hybridSection div {
     flex-direction: column;
     align-items: center;
+  }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 5%;
+}
+.btn a {
+  text-decoration: none;
+}
+.btn a button {
+  display: block;
+  width: 300px;
+  background-color: #355A20;
+  margin: 0 10px 20px;
+  color: white;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+.btn a button:hover {
+  background-color: #fcfef7;
+  color: #355A20;
+}
+@media (max-width: 500px) {
+  .btn a button {
+    width: 300px;
+    height: 75px;
+    font-size: 2.35rem;
+  }
+}
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .team h1 {
+    margin-bottom: 5%;
+  }
+}
+.team section {
+  text-align: center;
+  margin: 3%;
+  width: 80%;
+}
+.team section img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 2%;
+}
+.team section .outside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .team section .outside .PM,
+  .team section .outside .react1 {
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #059033;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .team section .outside {
+    flex-direction: column;
+  }
+}
+.team section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .team section {
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #059033;
   }
 }

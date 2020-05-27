@@ -6,6 +6,10 @@ header{
     h1 {
         color: @font-color;
         text-shadow: 1.5px 0 0;
+
+        @media @sm-mobile{
+            font-size: 3.5rem;
+        }
       }//closes h1
 
     nav{
@@ -26,6 +30,10 @@ header{
             }//closes hover
 
         }//closes a
+
+        @media @sm-mobile{
+            width: 80%;
+        }//closes sm-mobile media query
 
         @media @tiny-screen{
             .flex(@direction: column);

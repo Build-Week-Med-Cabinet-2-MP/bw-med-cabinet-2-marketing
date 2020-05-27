@@ -18,3 +18,24 @@
     border-style: @style;
     border-color: @color;
 }
+
+/*
+    Creates a button that can be changed
+    Default is 200px wide, color is header color and text is white,
+    rounded borders and height is 200px
+*/
+.custom-btn(@width:200px, @bg-color:#355A20, @txt-color:white){
+    display:block;
+    width: @width;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    color: @txt-color;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 3rem;
+
+    &:hover{
+        background-color: lighten(@font-color, 10%);
+        color: @bg-color;
+    }
+}
