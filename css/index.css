@@ -2,6 +2,10 @@
     Creates a flex container 
     Default is to center as a flex row but can be changed with arguments
 */
+/* 
+    Creates a bottom border
+    Default is 3px dashed with the color of the header 
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -259,14 +263,77 @@ header nav a:hover {
   border-radius: 50%;
   width: 20%;
 }
+@media (max-width: 850px) {
+  .sativaSection div img {
+    width: 25%;
+  }
+}
+@media (max-width: 660px) {
+  .sativaSection div img {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div img {
+    width: 75%;
+  }
+}
 .sativaSection div .effects {
   width: 20%;
+}
+@media (max-width: 500px) {
+  .sativaSection div .effects {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div .effects ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
 }
 .sativaSection div .uses {
   width: 20%;
 }
+@media (max-width: 500px) {
+  .sativaSection div .uses {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div .uses ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
 .sativaSection div .commonStrains {
   width: 20%;
+}
+@media (max-width: 500px) {
+  .sativaSection div .commonStrains {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div .commonStrains ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+@media (max-width: 500px) {
+  .sativaSection div {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #059033;
+  }
 }
 .indicaSection {
   text-align: center;
@@ -287,14 +354,73 @@ header nav a:hover {
   width: 20%;
   order: 1;
 }
+@media (max-width: 850px) {
+  .indicaSection div img {
+    width: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div img {
+    width: 75%;
+    order: -1;
+  }
+}
 .indicaSection div .indicaEffects {
   width: 20%;
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaEffects {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaEffects ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
 }
 .indicaSection div .indicaUses {
   width: 20%;
 }
+@media (max-width: 500px) {
+  .indicaSection div .indicaUses {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaUses ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
 .indicaSection div .indicaCommonStrains {
   width: 20%;
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaCommonStrains {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaCommonStrains ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #059033;
+  }
 }
 .hybridSection {
   display: flex;
@@ -309,6 +435,11 @@ header nav a:hover {
 .hybridSection p {
   width: 90%;
 }
+@media (max-width: 500px) {
+  .hybridSection p {
+    order: 1;
+  }
+}
 .hybridSection div {
   display: flex;
   justify-content: space-evenly;
@@ -318,5 +449,30 @@ header nav a:hover {
 }
 .hybridSection div img {
   border-radius: 50%;
-  width: 20%;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .hybridSection div img {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .hybridSection div .hybridCommonStrains {
+    width: 100%;
+    margin: 3%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .hybridSection div .hybridCommonStrains ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+@media (max-width: 500px) {
+  .hybridSection div {
+    flex-direction: column;
+    align-items: center;
+  }
 }

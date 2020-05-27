@@ -8,3 +8,13 @@
     align-items: @align;
     flex-direction: @direction;
 }
+
+/* 
+    Creates a bottom border
+    Default is 3px dashed with the color of the header 
+*/
+.border-bottom(@size:3px, @style:dashed, @color:@header){
+    border-bottom: @size;
+    border-style: @style;
+    border-color: @color;
+}
